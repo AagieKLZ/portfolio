@@ -1,0 +1,34 @@
+---
+let show = false;
+---
+<nav class="flex flex-row justify-between w-[90%] ml-[5%] py-2 border-bottom-2 border-light-blue-100 border-b-[1px]">
+    <a href="/"><div class="flex flex-row sm:pt-0 pt-1">
+        
+        <img src="/Logo.svg" alt="" class="sm:w-full sm:h-full h-3/4 object-fit">
+    <span class="text-dark-blue-1 font-gruppo sm:text-5xl text-4xl text-light-blue-100 tracking-widest pl-2">AAGIE.DEV</span>
+    </div></a>
+    <div class="lg:flex hidden flex-row w-1/2 justify-around text-light-blue-100 font-gruppo text-3xl pt-1">
+        <div class="animate-[slidemenu_0.5s_linear]"><a href="/about">About</a></div>
+        <div class="animate-[slidemenu_0.6s_linear]"><a href="/portfolio">Portfolio</a></div>
+        <div class="animate-[slidemenu_0.7s_linear]"><a href="/work">Work</a></div>
+        <div class="animate-[slidemenu_0.8s_linear]"><a href="/contact">Contact</a></div>
+    </div>
+    <div class={`lg:hidden ${show}`}>
+        <button><img src="/menu.svg" alt=""></button>
+    </div>
+    <script>
+        const button = document.querySelector("button");
+        const dropdown = document.getElementById("dropdown");
+
+        button.addEventListener("click", () => {
+            dropdown.classList.toggle("hidden")
+        })
+    </script>
+    
+</nav>
+<div class="lg:hidden text-white right-0 fixed text-right bg-dark-blue-300 w-52 border-2 border-dark-blue-100 animate-slide-left" id="dropdown">
+    <div class="py-10 border-b-2 border-dark-blue-100 hover:text-dark-blue-100 hover:bg-blue-300 pr-2 hover:scale-110"><a href="/about">About</a></div>
+    <div class="py-10 border-b-2 border-dark-blue-100 hover:text-dark-blue-100 hover:bg-blue-300 pr-2 hover:scale-110"><a href="/portfolio">Portfolio</a></div>
+    <div class="py-10 border-b-2 border-dark-blue-100 hover:text-dark-blue-100 hover:bg-blue-300 pr-2 hover:scale-110"><a href="/work">Work</a></div>
+    <div class="py-10 pr-2 hover:bg-blue-300 hover:text-dark-blue-100 hover:scale-110"><a href="/contact">Contact</a></div>
+</div>

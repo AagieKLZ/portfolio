@@ -1,18 +1,19 @@
 ---
 import Page from "../layouts/page.astro";
 import Stack from "../components/stack.svelte";
+import Title from "../components/title.astro";
 ---
 
 <Page>
-    <main class="flex flex-col w-fit mx-auto sm:ml-56 lg:ml-auto mt-12 px-8 text-white font-montserrat">
-        <span class="text-light-blue-100 relative font-goldman font-bold text-left text-2xl py-3">&lt;About me/&gt; </span>
-        <div class="text-white text-left w-3/4 leading-8">
+    <main class="flex flex-col w-full mx-auto sm:ml-72 ml-2 mt-12 px-8 text-white font-montserrat">
+        <Title title="About me" />
+        <div class="text-white text-left w-1/2 leading-8 text-xl">
             <p>I’m a self-taught programmer working on Data Analysis in the esports industry for the last 3 years and being a pioneer when it comes to applying new technologies into the field</p>
             <br class="md:static hidden">
             <p>For the last year, I enjoyed learning and working with web development to give my tools a new life, making stuff interactive and visually entertaining</p>
         </div>
-        <div class="mt-8">
-            <Stack client:only />
+        <div class="sm:mt-32 mt-4">
+            <Stack />
         </div>
         </main>
 </Page>

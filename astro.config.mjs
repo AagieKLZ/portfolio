@@ -11,5 +11,5 @@ export default defineConfig({
   integrations: [tailwind(), svelte()],
   config: {
     applyBaseStyles: true
-  }
+  },
 });

@@ -42,10 +42,10 @@
 </script>
 
 <span
-  class="text-light-blue-100 relative font-goldman font-bold text-left text-2xl pt-12"
+  class="text-light-blue-100 relative font-goldman font-bold text-left text-2xl sm:pt-12"
   >&lt;MyStack/&gt;
 </span>
-<div class="flex flex-row mt-8">
+<div class="flex flex-row sm:mt-8 mt-4 mb-12">
   <div
     id="types"
     class="flex flex-col text-right sm:mt-5 font-gruppo text-lg font-bold border-r-2 border-white w-36"
@@ -72,7 +72,7 @@
       <img
         src={`/${lang.tech.toLowerCase()}.svg`}
         alt={lang.tech}
-        class={`${lang.tag ? "relative" : ""} sm:w-[80px] sm:h-[80px]`}
+        class={`${lang.tag ? "relative" : ""} sm:w-[80px] sm:h-[80px] w-[50px] h-[50px]`}
       />
       {#if lang.tag === "loved"}
         <div class="absolute bottom-0 right-0">

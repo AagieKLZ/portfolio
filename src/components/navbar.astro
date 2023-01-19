@@ -13,22 +13,12 @@ let show = false;
         <div class="animate-[slidemenu_0.7s_linear]"><a href="/work">Work</a></div>
         <div class="animate-[slidemenu_0.8s_linear]"><a href="/contact">Contact</a></div>
     </div>
-    <div class={`lg:hidden ${show}`}>
-        <button><img src="/menu.svg" alt=""></button>
-    </div>
-    <script>
-        const button = document.querySelector("button");
-        const dropdown = document.getElementById("dropdown");
-
-        button.addEventListener("click", () => {
-            dropdown.classList.toggle("hidden")
-        })
-    </script>
     
 </nav>
-<div class="lg:hidden hidden text-white right-0 fixed text-right bg-dark-blue-300 w-52 border-2 border-dark-blue-100 animate-slide-left" id="dropdown">
-    <div class="py-10 border-b-2 border-dark-blue-100 hover:text-dark-blue-100 hover:bg-blue-300 pr-2 hover:scale-110"><a href="/about">About</a></div>
-    <div class="py-10 border-b-2 border-dark-blue-100 hover:text-dark-blue-100 hover:bg-blue-300 pr-2 hover:scale-110"><a href="/portfolio">Portfolio</a></div>
-    <div class="py-10 border-b-2 border-dark-blue-100 hover:text-dark-blue-100 hover:bg-blue-300 pr-2 hover:scale-110"><a href="/work">Work</a></div>
-    <div class="py-10 pr-2 hover:bg-blue-300 hover:text-dark-blue-100 hover:scale-110"><a href="/contact">Contact</a></div>
-</div>
+<div class="bg-gradient-to-l from-dark-blue-100 to-dark-blue-200 border-b-2 w-[90%] ml-[5%] border-light-blue-100 text-white py-4 flex justify-between lg:hidden animate-[slidenav_0.2s_linear]" id="dropdown">
+    <a href="/about" class="text-light-blue-100 mx-4 animate-[slidemenu_0.2s_linear] hover:underline underline-offset-4 decoration-2">About</a>
+    <a href="/work" class="text-light-blue-100 mx-4 animate-[slidemenu_0.3s_linear] hover:underline underline-offset-4 decoration-2">Work</a>
+    <a href="/portfolio" class="text-light-blue-100 mx-4 animate-[slidemenu_0.4s_linear] hover:underline underline-offset-4 decoration-2">Portfolio</a>
+    <a href="/contact" class="text-light-blue-100 mx-4 animate-[slidemenu_0.5s_linear] hover:underline underline-offset-4 decoration-2">Contact</a>
+  </div>
+  

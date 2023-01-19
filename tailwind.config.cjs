@@ -30,6 +30,14 @@ module.exports = {
 				slidemenu : {
 					from: {transform: "translateX(250px)"},
 					to: {transform: "translateX(0px)"}
+				},
+				slidenav : {
+					from: {opacity : 0},
+					to : {opacity: 1}
+				},
+				slidenav2 : {
+					from: {transform: "translateY(-100px)"},
+					to: {transform: "translateY(0px)"}
 				}
 			}
 		},

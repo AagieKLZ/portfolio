@@ -70,7 +70,7 @@
     {#each techs[selected] as lang}
     <div class="relative lg:px-8 px-2">
       <img
-        src={`/${lang.tech}.svg`}
+        src={`/${lang.tech.toLowerCase()}.svg`}
         alt={lang.tech}
         class={`${lang.tag ? "relative" : ""} sm:w-[80px] sm:h-[80px]`}
       />

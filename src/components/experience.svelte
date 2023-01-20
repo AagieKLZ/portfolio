@@ -7,21 +7,35 @@
     const works = {
         MAD : {
             role : "FullStack Developer",
-            company : "MAD Lions",
-            date : "DEC 2020 - Present",
-            desc : ["Responsible for ETL data pipelines"]
+            company : "OAM",
+            fullname : "MAD Lions / OAM",
+            date : "DEC 2020 - NOW",
+            desc : [
+              "Responsible for ETL data pipelines", 
+              "Optimization of loading algorithms, with an improval of over 130% in performance",
+              "Web development with React, NextJS and Flask",
+              "Data visualization with BI tools"
+            ]
         },
         FNATIC : {
             role : "Data Analyst",
             company : "FNATIC",
+            fullname : "FNATIC",
             date : "JAN 2020 - DEC 2020",
-            desc : []
+            desc : [
+              "Data processing using Python",
+              "Data visualization with Python and Google Sheets",
+              "Scripting on Google Sheets"
+            ]
         },
         Heretics : {
             role : "Data Analyst",
             company : "Heretics",
+            fullname : "Heretics",
             date : "JAN 2019 - DEC 2019",
-            desc : []
+            desc : [
+              "Data processing and visualization using Excel and Google Sheets"
+            ]
         },
     }
 </script>
@@ -56,7 +70,7 @@
     </div>
     <div>
         <div class="flex flex-col sm:ml-8 ml-8 mt-4 sm:mt-4">
-            <span class="font-goldman text-white">{works[selected].role} @ <span class="text-light-blue-100">{works[selected].company}</span></span>
+            <span class="font-goldman text-white">{works[selected].role} @ <span class="text-light-blue-100">{works[selected].fullname}</span></span>
             <span class="font-gruppo text-gray-100">{works[selected].date}</span>
             <ul class="text-white list-inside list-disc font-montserrat">
                 {#each works[selected].desc as desc}

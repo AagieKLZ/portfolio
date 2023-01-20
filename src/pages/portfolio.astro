@@ -3,5 +3,46 @@ import Page from "../layouts/page.astro";
 ---
 
 <Page>
-    
+        <div class="relative mt-12 lg:ml-44 ml-2 sm:mt-12 px-8">        
+        <span
+          class="text-light-blue-100 relative font-goldman font-bold text-left text-2xl"
+          >&lt;Samples /&gt;
+        </span>
+        </div>
+        <div class="flex lg:flex-row flex-col w-full justify-around mt-4 flex-wrap px-4">
+            <div class="lg:w-1/3 lg:mb-0 mb-12 text-center md:w-1/2 w-full h-48 mx-auto ">
+                <span class="text-center mx-auto font-goldman text-light-blue-100 font-bold text-xl"><a href="https://webdevtools.app" target="_blank">WebDevTools</a></span>
+                <div class="bg-dark-blue-200 my-auto align-middle text-lg p-2 pt-5 text-white w-full h-full rounded-2xl border-2 border-black drop-shadow-xl hover:shadow-md hover:shadow-light-blue-100">
+                    Recopilation of useful tools for web development grouped by categories. Developed using <b>React</b>, <b>MongoDB</b>, <b>Flask</b> and <b>Tailwind CSS</b>
+                <div class="flex flex-row justify-around">
+                    <img src="/react.svg" alt="">
+                    <img src="/mongodb.svg" alt="">
+                    <img src="/flask.svg" alt="">
+                    <img src="/tailwind.svg" alt="">
+                </div>
+                </div>
+            </div>
+            <div class="lg:w-1/3 lg:mb-0 mb-12 text-center md:w-1/2 w-full h-48 mx-auto ">
+                <span class="text-center mx-auto font-goldman text-light-blue-100 font-bold text-xl"><a href="https://sendittarragona.live" target="_blank">SendIT</a></span>
+                <div class="bg-dark-blue-200 my-auto align-middle text-lg p-2 pt-5 text-white w-full h-full rounded-2xl border-2 border-black drop-shadow-xl hover:shadow-md hover:shadow-light-blue-100">
+                    Simulation of delivery company that allows you to Sign Up and create and track your orders. Developed with <b>React Router</b>, <b>Express</b> and <b>MySQL</b>
+                <div class="flex flex-row justify-around">
+                    <img src="/react.svg" alt="">
+                    <img src="/mysql.svg" alt="">
+                    <img src="/express.svg" alt="">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative mt-6 lg:ml-[20%] ml-2 lg:mt-48 px-8 mb-8 text-lg">        
+            <span
+              class="text-light-blue-100 relative font-goldman font-bold text-left text-2xl"
+              >&lt;Others /&gt;
+            </span>
+            <ul class="text-white list-disc mt-4 ml-24">
+                <li><a href="https://github.com/AagieKLZ/LiveChat" target="_blank" class="font-bold text-light-blue-100 font-goldman text-xl">Live Chat App</a> - Developed with Svelte and NodeJS</li>
+                <li><a href="https://github.com/AagieKLZ/wordle" target="_blank" class="font-bold text-light-blue-100 font-goldman text-xl">Wordle</a> - Developed with Svelte and TailwindCSS</li>
+                <li><a href="https://github.com/AagieKLZ/game_2048" target="_blank" class="font-bold text-light-blue-100 font-goldman text-xl">2048 Game</a> - Developed with Svelte</li>
+            </ul>
+            </div>
 </Page>
